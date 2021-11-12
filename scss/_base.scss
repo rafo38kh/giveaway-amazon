@@ -1,0 +1,55 @@
+$color-primary: hsl(0, 0%, 0%);
+$color-secondary: hsl(0, 0%, 60%);
+$color-header: hsl(0, 0%, 93%);
+$color-footer: hsl(0, 0%, 96%);
+$color-red: hsl(0, 100%, 45%);
+$color-blue: hsl(207, 90%, 54%);
+
+$box-shadow-primary: 0px 4px 25px rgba(0, 0, 0, 0.1);
+$box-shadow-secondary: 0px 10px 20px rgba(94, 94, 94, 0.1);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Nunito Sans", sans-serif;
+}
