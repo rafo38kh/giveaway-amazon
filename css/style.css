@@ -33,4 +33,278 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Nunito Sans", sans-serif; }
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  color: black; }
+
+.giveaway__container {
+  padding: 0 2rem; }
+  .giveaway__container--column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  @media (min-width: 768px) {
+    .giveaway__container {
+      padding: 0 4rem; }
+      .giveaway__container--column {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; } }
+
+.giveaway {
+  background-color: #ededed; }
+  @media (min-width: 768px) {
+    .giveaway {
+      padding-top: 1rem; } }
+  .giveaway__text {
+    margin-top: 1rem;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .giveaway__text {
+        text-align: left; } }
+  .giveaway__title {
+    font-weight: 900;
+    font-size: 1.8rem; }
+    @media (min-width: 768px) {
+      .giveaway__title {
+        font-size: 3rem; } }
+  .giveaway__subtitle {
+    color: #999999;
+    font-weight: 400;
+    font-size: 1.15rem; }
+    @media (min-width: 768px) {
+      .giveaway__subtitle {
+        font-size: 1.6rem;
+        max-width: 40rem; } }
+  .giveaway__banner {
+    width: 24rem; }
+    @media (min-width: 768px) {
+      .giveaway__banner {
+        width: 35%;
+        margin-top: 2rem; } }
+  @media (min-width: 768px) {
+    .giveaway__product {
+      display: flex;
+      gap: 4rem; } }
+  .giveaway__slider {
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0 2.5rem 0;
+    display: flex; }
+    @media (min-width: 768px) {
+      .giveaway__slider {
+        flex-basis: 70%; } }
+  .giveaway__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7rem 1.5rem 1.3rem 1.2rem;
+    gap: 1rem;
+    position: relative; }
+    .giveaway__images::before, .giveaway__images::after {
+      width: 1.8rem;
+      position: absolute;
+      left: 1.5rem; }
+      @media (min-width: 768px) {
+        .giveaway__images::before, .giveaway__images::after {
+          width: 2.5rem;
+          left: 2.7rem; } }
+    .giveaway__images::before {
+      content: url(../images/svg/arrow_right.svg);
+      top: 0; }
+      @media (min-width: 768px) {
+        .giveaway__images::before {
+          top: 3rem; } }
+    .giveaway__images::after {
+      content: url(../images/svg/arrow_left.svg);
+      bottom: 0; }
+      @media (min-width: 768px) {
+        .giveaway__images::after {
+          bottom: 2.5rem; } }
+  .giveaway__img {
+    width: 5rem; }
+    @media (min-width: 768px) {
+      .giveaway__img {
+        width: 8rem; } }
+    .giveaway__img--lg {
+      width: 75%;
+      margin: 3.7rem 1.8rem 3.4rem 0; }
+    .giveaway__img--active {
+      border: 0.1rem solid #2094f3;
+      border-radius: 0.3rem;
+      opacity: 0.8; }
+  @media (min-width: 768px) {
+    .giveaway__details {
+      margin-top: 2rem; } }
+  .giveaway__bestseller {
+    display: flex;
+    align-items: center;
+    gap: 1rem; }
+  .giveaway__best {
+    font-size: 1.2rem;
+    font-weight: 900; }
+  .giveaway__stars {
+    display: flex;
+    margin-left: auto;
+    margin-bottom: 0.3rem; }
+  .giveaway__star {
+    width: 1.2rem; }
+  .giveaway__review {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+    color: #999999; }
+  .giveaway__name {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin: 2.1rem 0 1.5rem 0; }
+  .giveaway__desc {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.1rem; }
+  .giveaway__sub-desc {
+    color: #999999;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 23rem; }
+  .giveaway__red-box {
+    color: white;
+    background-color: #e60000;
+    width: 10.6rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0; }
+  .giveaway__divider {
+    border: 0.1rem solid #999999; }
+  .giveaway__price {
+    color: #999999;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase; }
+    .giveaway__price-span {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: black;
+      margin-left: 1rem; }
+  .giveaway__btn {
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem 0 2.5rem 0; }
+    .giveaway__btn--read-more {
+      all: unset;
+      color: dimgray;
+      font-size: 1.4rem;
+      font-weight: 700;
+      cursor: pointer; }
+  .giveaway__amazon-prime {
+    margin: 0 auto; }
+  @media (min-width: 768px) {
+    .giveaway__overview {
+      max-width: 45rem; } }
+  .giveaway__heading-secondary {
+    font-size: 2rem;
+    margin-top: 2.5rem; }
+  .giveaway__question {
+    font-size: 1.4rem;
+    margin: 1rem 0 0.5rem 0; }
+  .giveaway__answer {
+    font-size: 1.2rem;
+    color: #999999; }
+    .giveaway__answer-list {
+      margin-left: 1.5rem;
+      color: dimgray; }
+    .giveaway__answer-item {
+      margin-bottom: 0.5rem; }
+    .giveaway__answer-txt {
+      color: #999999;
+      font-size: 1.2rem; }
+  .giveaway__process {
+    margin-top: 2rem; }
+  .giveaway__circles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem 4rem;
+    margin-top: 1.1rem; }
+  .giveaway__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; }
+    .giveaway__circle::after {
+      content: url("../images/svg/arrow.svg");
+      position: absolute;
+      right: -2.5rem;
+      bottom: 50%; }
+    .giveaway__circle:nth-child(2)::after, .giveaway__circle:nth-child(4)::after, .giveaway__circle:nth-child(5)::after {
+      content: ""; }
+    @media (min-width: 768px) {
+      .giveaway__circle:not(:last-child)::after {
+        content: url("../images/svg/arrow.svg");
+        position: absolute;
+        right: -2.5rem;
+        bottom: 50%; } }
+    .giveaway__circle-txt {
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 2.4rem;
+      text-align: center;
+      width: 7.65rem; }
+    .giveaway__circle-img {
+      padding: 3.5rem;
+      width: 11rem; }
+    .giveaway__circle-desc {
+      font-size: 1.4rem;
+      font-weight: 900;
+      text-align: center;
+      max-width: 11rem; }
+  .giveaway__img-wrapper {
+    box-shadow: 0px 10px 20px rgba(94, 94, 94, 0.1);
+    border-radius: 25rem;
+    margin-bottom: 1rem;
+    width: 11rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .giveaway__footer {
+    background-color: whitesmoke;
+    margin-top: 4rem; }
+    .giveaway__footer-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+      padding: 2rem 0; }
+      @media (min-width: 768px) {
+        .giveaway__footer-list {
+          gap: 18rem; } }
+    .giveaway__footer-item {
+      font-size: 1.4rem;
+      font-weight: 900; }
+    .giveaway__footer-sub-list {
+      list-style: none; }
+    .giveaway__footer-sub-item {
+      margin: 1rem 0; }
+    .giveaway__footer-link {
+      color: black;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 400; }
+    .giveaway__footer-txt {
+      background: white;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 2rem; }
