@@ -608,8 +608,9 @@ body {
 
 .active-section {
   display: flex; }
-  .active-section--grid {
-    display: grid; }
+
+.active-grid {
+  display: grid; }
 
 .inactive-section {
   display: none; }

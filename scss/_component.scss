@@ -772,10 +772,10 @@
 
 .active-section {
   display: flex;
+}
 
-  &--grid {
-    display: grid;
-  }
+.active-grid {
+  display: grid;
 }
 
 .inactive-section {

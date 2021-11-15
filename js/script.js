@@ -51,15 +51,15 @@ const setActiveState = function (
   currentActive++;
   sectionInactive.classList.add("inactive-section");
   sectionActive.classList.remove("inactive-section");
-  sectionActive.classList.add(className);
+  sectionActive.classList.add(`${className}`);
   update();
 };
 
 sectionOneBtn.addEventListener("click", () =>
-  setActiveState(sectionOne, sectionTwo)
+  setActiveState(sectionOne, sectionTwo, "active-grid")
 );
 sectionTwoBtn.addEventListener("click", () =>
-  setActiveState(sectionTwo, sectionThree, "grid-active")
+  setActiveState(sectionTwo, sectionThree)
 );
 sectionThreeBtn.addEventListener("click", () =>
   setActiveState(sectionThree, sectionFour)
@@ -75,12 +75,12 @@ sectionFiveBtn.addEventListener("click", () => {
 
 readMore.addEventListener("click", (e) => {
   const html = `
-  <h4 class="giveaway__question">Key Ingredients</h4>
-  <p class="giveaway__answer">
-  Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier,
-  improve its resiliency, and balance and retain skin’s moisture levels.
-  Hyaluronic acid acts as a natural moisture magnet/humectant.
-  </p>
+<h4 class="giveaway__question">Key Ingredients</h4>
+<p class="giveaway__answer">
+Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier,
+improve its resiliency, and balance and retain skin’s moisture levels.
+Hyaluronic acid acts as a natural moisture magnet/humectant.
+</p>
 
 <p class="giveaway__price">
 <s>us$25.89</s>
