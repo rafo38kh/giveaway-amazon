@@ -52,6 +52,10 @@ body {
         justify-content: space-between;
         align-items: flex-start; } }
 
+@media (min-width: 768px) {
+  .giveaway__flex-container {
+    display: flex; } }
+
 .giveaway {
   background-color: #ededed; }
   @media (min-width: 768px) {
@@ -265,6 +269,9 @@ body {
       cursor: pointer; }
     .giveaway__btn--silver {
       background-color: dimgray; }
+      @media (min-width: 768px) {
+        .giveaway__btn--silver {
+          width: 31rem; } }
     .giveaway__btn-icon {
       display: flex;
       align-items: center;
@@ -280,18 +287,37 @@ body {
           font-size: 1.8rem; } }
   .giveaway__amazon-prime {
     margin: 0 auto; }
+  @media (min-width: 768px) {
+    .giveaway__section--one, .giveaway__section--two, .giveaway__section--three, .giveaway__section--four, .giveaway__section--five {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7rem; } }
+  @media (min-width: 768px) {
+    .giveaway__section--two {
+      display: grid;
+      grid-template-columns: 50% 40%;
+      gap: 0; } }
   .giveaway__progress-wrapper {
     margin: 2rem 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column; }
+    justify-content: center; }
+    @media (min-width: 768px) {
+      .giveaway__progress-wrapper {
+        flex-direction: column;
+        gap: 5rem; } }
   .giveaway__progress-container {
     width: 55rem;
     max-width: 100%;
     position: relative;
     display: flex;
     justify-content: space-between; }
+    @media (min-width: 768px) {
+      .giveaway__progress-container {
+        width: 7rem;
+        flex-direction: column;
+        gap: 5rem; } }
     .giveaway__progress-container::before {
       content: "";
       width: 100%;
@@ -302,6 +328,11 @@ body {
       left: 0;
       transform: translateY(-50%);
       z-index: -1; }
+    @media (min-width: 768px) {
+      .giveaway__progress-container::before {
+        width: 0.2rem;
+        height: 30rem;
+        left: 1.5rem; } }
   .giveaway__progress-bar {
     width: 0%;
     max-width: 100%;
@@ -313,6 +344,9 @@ body {
     transform: translateY(-50%);
     z-index: -1;
     transition: 0.4s ease; }
+    @media (min-width: 768px) {
+      .giveaway__progress-bar {
+        display: none; } }
   .giveaway__progress--circle {
     width: 3rem;
     height: 3rem;
@@ -329,6 +363,14 @@ body {
       border: 0.2rem solid #2094f3;
       background-color: #2094f3;
       box-shadow: white 0px 0px 0px 3px, #2094f3 0px 0px 0px 5px; }
+  .giveaway__step-block {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .giveaway__step-block {
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .giveaway__step-block--facebook {
+        grid-column: 1 / 2; } }
   .giveaway__step-text {
     color: dimgray;
     font-size: 2rem;
@@ -378,15 +420,25 @@ body {
     text-align: center; }
   .giveaway__product-img {
     display: none; }
+    @media (min-width: 768px) {
+      .giveaway__product-img {
+        display: block;
+        width: 40%; } }
     .giveaway__product-img--facebook {
       width: 28rem;
       margin: 1rem auto;
       display: block; }
+      @media (min-width: 768px) {
+        .giveaway__product-img--facebook {
+          width: 100%; } }
   .giveaway__amazon-press {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; }
+    @media (min-width: 768px) {
+      .giveaway__amazon-press {
+        display: none; } }
   .giveaway__arrow {
     width: 14rem;
     transform: matrix(-1, 0, 0, 1, 0, 0); }
@@ -554,10 +606,10 @@ body {
         .giveaway__footer-txt {
           font-size: 1.8rem; } }
 
-.active {
+.active-section {
   display: flex; }
-  .active--grid {
+  .active-section--grid {
     display: grid; }
 
-.inactive {
+.inactive-section {
   display: none; }
