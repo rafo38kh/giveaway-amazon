@@ -266,7 +266,8 @@ body {
     border: none;
     text-align: center;
     padding: 1rem;
-    margin: 1.5rem 0 2.5rem 0; }
+    margin: 1.5rem 0 2.5rem 0;
+    transition: all 0.3s; }
     .giveaway__btn--read-more {
       all: unset;
       color: dimgray;
@@ -289,8 +290,13 @@ body {
         padding: 1.5rem;
         font-size: 1.8rem;
         margin: 0 0 2.5rem 0; }
+        .giveaway__btn:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+          cursor: pointer; }
         .giveaway__btn--read-more {
-          font-size: 1.8rem; } }
+          font-size: 1.8rem; }
+          .giveaway__btn--read-more:hover {
+            background-color: initial; } }
   .giveaway__amazon-prime {
     margin: 0 auto; }
     @media (min-width: 1280px) {
