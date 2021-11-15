@@ -21,6 +21,9 @@
     @media (min-width: 768px) {
       font-size: 3rem;
     }
+    @media (min-width: 1280px) {
+      font-size: 4.8rem;
+    }
   }
 
   &__subtitle {
@@ -32,6 +35,10 @@
       font-size: 1.6rem;
       max-width: 40rem;
     }
+    @media (min-width: 1280px) {
+      font-size: 2.4rem;
+      max-width: 60rem;
+    }
   }
 
   &__banner {
@@ -41,15 +48,19 @@
       width: 35%;
       margin-top: 2rem;
     }
+    @media (min-width: 1280px) {
+      width: 37%;
+    }
   }
 
-  &__main {
-  }
+  //   &__main {
+  //   }
 
   &__product {
     @media (min-width: 768px) {
       display: flex;
       gap: 4rem;
+      //   margin: 2rem 0;
     }
   }
 
@@ -60,6 +71,9 @@
 
     @media (min-width: 768px) {
       flex-basis: 70%;
+    }
+    @media (min-width: 1280px) {
+      flex-basis: 80%;
     }
   }
 
@@ -76,11 +90,11 @@
     &::after {
       width: 1.8rem;
       position: absolute;
-      left: 1.5rem;
+      left: 1.8rem;
 
       @media (min-width: 768px) {
         width: 2.5rem;
-        left: 2.7rem;
+        left: 1.8rem;
       }
     }
 
@@ -88,7 +102,7 @@
       content: url(../images/svg/arrow_right.svg);
       top: 0;
       @media (min-width: 768px) {
-        top: 3rem;
+        top: 10%;
       }
     }
 
@@ -96,8 +110,12 @@
       content: url(../images/svg/arrow_left.svg);
       bottom: 0;
       @media (min-width: 768px) {
-        bottom: 2.5rem;
+        bottom: 8%;
       }
+    }
+
+    @media (min-width: 1280px) {
+      margin: 1.7rem 3rem 1.3rem 1.2rem;
     }
   }
 
@@ -105,12 +123,21 @@
     width: 5rem;
 
     @media (min-width: 768px) {
-      width: 8rem;
+      width: 6.5rem;
+    }
+    @media (min-width: 1280px) {
+      width: 12rem;
     }
 
     &--lg {
       width: 75%;
       margin: 3.7rem 1.8rem 3.4rem 0;
+      @media (min-width: 768px) {
+        margin: 5.7rem 1.8rem 5.4rem 0;
+      }
+      @media (min-width: 1280px) {
+        width: 70%;
+      }
     }
 
     &--active {
@@ -135,6 +162,9 @@
   &__best {
     font-size: 1.2rem;
     font-weight: 900;
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__stars {
@@ -145,24 +175,37 @@
 
   &__star {
     width: 1.2rem;
+    @media (min-width: 1280px) {
+      width: 1.6rem;
+    }
   }
 
   &__review {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
     color: $color-secondary;
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__name {
     font-size: 1.8rem;
     font-weight: 900;
     margin: 2.1rem 0 1.5rem 0;
+    @media (min-width: 1280px) {
+      font-size: 3rem;
+      margin: 2.1rem 0 2rem 0;
+    }
   }
 
   &__desc {
     font-size: 1.2rem;
     font-weight: 900;
     margin-bottom: 0.1rem;
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__sub-desc {
@@ -170,6 +213,10 @@
     font-size: 1.2rem;
     font-weight: 400;
     max-width: 23rem;
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+      max-width: 40rem;
+    }
   }
 
   &__red-box {
@@ -180,10 +227,18 @@
     padding: 0.5rem 1rem 0.3rem 1rem;
     border-radius: 0.5rem;
     margin: 2rem 0;
+    @media (min-width: 1280px) {
+      width: 15rem;
+      font-size: 1.8rem;
+      margin: 3rem 0;
+    }
   }
 
   &__divider {
-    border: 0.1rem solid $color-secondary;
+    border: 0.01rem solid $color-secondary;
+    @media (min-width: 1280px) {
+      width: 78%;
+    }
   }
 
   &__price {
@@ -197,6 +252,13 @@
       font-weight: 900;
       color: $color-primary;
       margin-left: 1rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+      margin: 2rem 0;
+      &-span {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -219,26 +281,247 @@
       font-weight: 700;
       cursor: pointer;
     }
+
+    &--silver {
+      background-color: $color-secondary-dark;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    @media (min-width: 1280px) {
+      width: 78%;
+      padding: 1.5rem;
+      font-size: 1.8rem;
+      margin: 0 0 2.5rem 0;
+      &--read-more {
+        font-size: 1.8rem;
+      }
+    }
   }
 
   &__amazon-prime {
     margin: 0 auto;
+    @media (min-width: 1280px) {
+    }
+  }
+
+  &__section {
+    // &--one {
+    //   display: none;
+    // }
+
+    // &--two {
+    //   display: none;
+    // }
+
+    // &--three {
+    //   display: none;
+    // }
+
+    // &--four {
+    //   display: none;
+    // }
+
+    // &--five {
+    //   display: none;
+    // }
+  }
+
+  &__progress-wrapper {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__progress-container {
+    // display: none;
+    width: 55rem;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    // transform: rotate(90deg);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 0.2rem;
+      background-color: $color-secondary;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  }
+
+  &__progress-bar {
+    width: 0%;
+    max-width: 100%;
+    height: 0.2rem;
+    background-color: $color-blue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+  }
+
+  &__progress--circle {
+    width: 3rem;
+    height: 3rem;
+    color: $color-white;
+    background-color: $color-secondary--light;
+    border: 0.2rem solid $color-secondary--light;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s ease;
+    // transform: rotate(-90deg);
+
+    &.active {
+      color: $color-white;
+      border: 0.2rem solid $color-blue;
+      background-color: $color-blue;
+      box-shadow: $color-white 0px 0px 0px 3px, $color-blue 0px 0px 0px 5px;
+    }
+  }
+
+  &__step-block {
+  }
+
+  &__step-text {
+    color: $color-secondary-dark;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3rem 0 1.5rem 0;
+  }
+
+  &__step-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__step-list {
+    list-style: none;
+  }
+
+  &__step-paragraph {
+    color: $color-secondary;
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    &--span {
+      color: $color-secondary-dark;
+      font-weight: 700;
+    }
+  }
+
+  &__step-italic {
+    color: $color-secondary;
+    font-size: 1.2rem;
+  }
+
+  &__step-ordeer {
+    margin-left: 3rem;
+  }
+
+  &__step-item {
+    color: $color-secondary;
+    font-size: 1.35rem;
+    font-weight: 400;
+  }
+
+  &__step-list-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__step-icon {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1rem;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  &__link {
+    color: $color-secondary;
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__product-img {
+    display: none;
+
+    &--facebook {
+      width: 28rem;
+      margin: 1rem auto;
+      display: block;
+    }
+  }
+
+  &__amazon-press {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__arrow {
+    width: 14rem;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  &__amazon-text {
+    color: $color-red;
+    font-size: 1.8rem;
+    font-weight: 700;
   }
 
   &__overview {
     @media (min-width: 768px) {
       max-width: 45rem;
     }
+    @media (min-width: 1280px) {
+      max-width: 70rem;
+    }
   }
 
   &__heading-secondary {
     font-size: 2rem;
     margin-top: 2.5rem;
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+    @media (min-width: 1280px) {
+      font-size: 4.8rem;
+    }
   }
 
   &__question {
     font-size: 1.4rem;
     margin: 1rem 0 0.5rem 0;
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+    }
   }
 
   &__answer {
@@ -256,13 +539,23 @@
       color: $color-secondary;
       font-size: 1.2rem;
     }
+    @media (min-width: 768px) {
+      font-size: 1.4rem;
+      &-txt {
+        font-size: 1.4rem;
+      }
+    }
+    @media (min-width: 1280px) {
+      font-size: 1.8rem;
+      &-txt {
+        font-size: 1.8rem;
+      }
+    }
   }
 
   &__process {
     margin-top: 2rem;
   }
-
-  //   &__heading-secondary {}
 
   &__circles {
     display: flex;
@@ -271,6 +564,12 @@
     justify-content: center;
     gap: 2rem 4rem;
     margin-top: 1.1rem;
+    @media (min-width: 768px) {
+      //   align-items: stretch;
+    }
+    @media (min-width: 1280px) {
+      justify-content: space-between;
+    }
   }
 
   &__circle {
@@ -305,6 +604,13 @@
         }
       }
     }
+    @media (min-width: 1280px) {
+      &:not(:last-child) {
+        &::after {
+          right: -5rem;
+        }
+      }
+    }
 
     &-txt {
       font-size: 2.4rem;
@@ -317,6 +623,9 @@
     &-img {
       padding: 3.5rem;
       width: 11rem;
+      @media (min-width: 1280px) {
+        width: 14rem;
+      }
     }
 
     &-desc {
@@ -324,6 +633,10 @@
       font-weight: 900;
       text-align: center;
       max-width: 11rem;
+      @media (min-width: 1280px) {
+        font-size: 1.8rem;
+        max-width: unset;
+      }
     }
   }
 
@@ -337,6 +650,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (min-width: 768px) {
+      width: 10rem;
+    }
+    @media (min-width: 1280px) {
+      width: 16rem;
+    }
   }
 
   //===========footer============
@@ -353,13 +672,19 @@
       padding: 2rem 0;
 
       @media (min-width: 768px) {
-        gap: 18rem;
+        gap: 15rem;
+      }
+      @media (min-width: 1280px) {
+        gap: 25rem;
       }
     }
 
     &-item {
       font-size: 1.4rem;
       font-weight: 900;
+      @media (min-width: 1280px) {
+        font-size: 1.8rem;
+      }
     }
 
     &-sub-list {
@@ -375,14 +700,36 @@
       text-decoration: none;
       font-size: 1.4rem;
       font-weight: 400;
+      @media (min-width: 1280px) {
+        font-size: 1.8rem;
+      }
     }
 
     &-txt {
       background: $color-white;
       font-size: 1.4rem;
-      font-weight: 700;
+      font-weight: 400;
       text-align: center;
       padding: 2rem;
+      @media (min-width: 768px) {
+        text-align: left;
+        padding: 2rem 4rem;
+      }
+      @media (min-width: 1280px) {
+        font-size: 1.8rem;
+      }
     }
   }
+}
+
+.active {
+  display: flex;
+
+  &--grid {
+    display: grid;
+  }
+}
+
+.inactive {
+  display: none;
 }
