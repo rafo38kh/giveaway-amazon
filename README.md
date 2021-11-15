@@ -17,7 +17,7 @@
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://rafo38kh.github.io/giveaway-amazon/](https://rafo38kh.github.io/giveaway-amazon/)
 
 ## My process
 
@@ -26,6 +26,8 @@
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 ## Author
