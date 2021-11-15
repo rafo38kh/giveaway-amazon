@@ -17,6 +17,9 @@
       align-items: flex-start;
     }
   }
+  @media (min-width: 1280px) {
+    padding: 5rem 5rem 0 5rem;
+  }
 }
 
 .giveaway__flex-container {

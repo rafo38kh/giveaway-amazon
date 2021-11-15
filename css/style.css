@@ -51,6 +51,9 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start; } }
+  @media (min-width: 1280px) {
+    .giveaway__container {
+      padding: 5rem 5rem 0 5rem; } }
 
 @media (min-width: 768px) {
   .giveaway__flex-container {
@@ -127,6 +130,9 @@ body {
         .giveaway__images::before, .giveaway__images::after {
           width: 2.5rem;
           left: 1.8rem; } }
+      @media (min-width: 1280px) {
+        .giveaway__images::before, .giveaway__images::after {
+          left: 4.8rem; } }
     .giveaway__images::before {
       content: url(../images/svg/arrow_right.svg);
       top: 0; }
@@ -271,7 +277,7 @@ body {
       background-color: dimgray; }
       @media (min-width: 768px) {
         .giveaway__btn--silver {
-          width: 31rem; } }
+          width: 32rem; } }
     .giveaway__btn-icon {
       display: flex;
       align-items: center;
@@ -287,6 +293,9 @@ body {
           font-size: 1.8rem; } }
   .giveaway__amazon-prime {
     margin: 0 auto; }
+    @media (min-width: 1280px) {
+      .giveaway__amazon-prime {
+        margin-left: 12rem; } }
   @media (min-width: 768px) {
     .giveaway__section--one, .giveaway__section--two, .giveaway__section--three, .giveaway__section--four, .giveaway__section--five {
       display: flex;
@@ -370,17 +379,27 @@ body {
         width: 50%; } }
     @media (min-width: 768px) {
       .giveaway__step-block--facebook {
+        width: 80%;
         grid-column: 1 / 2; } }
   .giveaway__step-text {
     color: dimgray;
     font-size: 2rem;
     font-weight: 700;
     margin: 3rem 0 1.5rem 0; }
+    @media (min-width: 1280px) {
+      .giveaway__step-text {
+        font-size: 4.8rem; } }
   .giveaway__step-heading {
     font-size: 2.2rem;
     font-weight: 700; }
+    @media (min-width: 1280px) {
+      .giveaway__step-heading {
+        font-size: 4.8rem; } }
   .giveaway__step-list {
     list-style: none; }
+    @media (min-width: 1280px) {
+      .giveaway__step-list {
+        margin: 2rem 0 4rem 0; } }
   .giveaway__step-paragraph {
     color: #999999;
     font-size: 1.35rem;
@@ -389,15 +408,24 @@ body {
     .giveaway__step-paragraph--span {
       color: dimgray;
       font-weight: 700; }
+    @media (min-width: 1280px) {
+      .giveaway__step-paragraph {
+        font-size: 1.8rem; } }
   .giveaway__step-italic {
     color: #999999;
     font-size: 1.2rem; }
+    @media (min-width: 1280px) {
+      .giveaway__step-italic {
+        font-size: 1.4rem; } }
   .giveaway__step-ordeer {
-    margin-left: 3rem; }
+    margin: 1rem 0 4rem 3rem; }
   .giveaway__step-item {
     color: #999999;
     font-size: 1.35rem;
     font-weight: 400; }
+    @media (min-width: 1280px) {
+      .giveaway__step-item {
+        font-size: 1.8rem; } }
   .giveaway__step-list-item {
     display: flex;
     align-items: center;
@@ -418,6 +446,11 @@ body {
     display: inline-block;
     width: 100%;
     text-align: center; }
+    @media (min-width: 1280px) {
+      .giveaway__link {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-left: 13rem; } }
   .giveaway__product-img {
     display: none; }
     @media (min-width: 768px) {
@@ -510,7 +543,8 @@ body {
       content: url("../images/svg/arrow.svg");
       position: absolute;
       right: -2.5rem;
-      bottom: 50%; }
+      bottom: 50%;
+      width: 2.5rem; }
     .giveaway__circle:nth-child(2)::after, .giveaway__circle:nth-child(4)::after, .giveaway__circle:nth-child(5)::after {
       content: ""; }
     @media (min-width: 768px) {
